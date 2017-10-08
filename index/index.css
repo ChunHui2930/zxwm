@@ -1,0 +1,474 @@
+body {
+    margin: 0;
+    font-size: 12px;
+    font-family: "Microsoft YaHei", \5b8b\4f53, Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    overflow-x: hidden
+}
+
+div, p, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, select, textarea, table, td {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+area {
+    outline: none;
+}
+
+img {
+    border: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+iframe {
+    display: block;
+}
+
+a {
+    font-family: "Microsoft YaHei", \5b8b\4f53, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    outline: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+/*侧边栏开始*/
+.silder_bar{
+    width: 81px;
+    height: 255px;
+    background: url("../images/silder_bar.png") no-repeat center top ;
+    /*background-color: black;*/
+    position: fixed;
+    z-index: 999;
+    right: 15px;
+    top: 50%;
+    margin-top: -127px;
+    text-indent: -999em;
+}
+.silder_bar a{
+    width: 81px;
+    display:block;
+    height:81px;
+    margin-bottom: 5px;
+}
+
+/*侧边栏结束*/
+/*第一个背景开始*/
+object{
+    width:100%;
+    height:865px;
+    position: absolute;
+    top:50px;
+    z-index: 111;
+}
+.video{
+    position: fixed;
+    width: 100%;
+    height: 3302px;
+    background-color:rgba(0,0,0,.5);
+    z-index: 999;
+    display: none;
+}
+.video video{
+    position: absolute;
+    width: 50%;
+    top:100px;
+    left:375px;
+
+}
+.video span{
+   position: absolute;
+    width: 50px;
+    height:50PX;
+ background: url("../images/popclose.jpg") center top;
+    right:242px;
+    top:100px;
+    cursor: pointer;
+
+
+}
+.video span:hover{
+    transition: 0.5s linear;
+    transform: rotate(360deg);
+}
+.bg1{
+    width: 100%;
+    height: 865px;
+    background:url("../images/bg1.jpg") no-repeat center top;
+
+}
+.wrap{
+    width: 1200px;
+    margin:0 auto;
+    position: relative;
+}
+.wrap .logo{
+    overflow: hidden;
+    position: absolute;
+    top:14px;
+}
+.logo a{
+    display: block;
+    width: 72px;
+    height: 66px;
+    background: url("../images/logo.png") no-repeat ;
+    text-indent: -999px;
+}
+.Player{
+    width: 269px;
+    height: 526px;
+    background:url("../images/Player.png") no-repeat;
+    position: absolute;
+    top:100px;
+    right:100px;
+}
+.Player a{
+    position: absolute;
+    width: 82px;
+    height: 82px;
+    left:0;
+    top:329px;
+}
+
+.down{
+    width: 488px;
+    height: 204px;
+    background: url("../images/down_box.png");
+    position: absolute;
+    left:30%;
+    top:625px;
+}
+.down .get{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 12px;
+    color: #5a4574;
+    font-weight: bold;
+
+}
+.down .get span{
+   color: #fd4822
+}
+.down .erweima{
+    width: 177px;
+    height: 154px;
+    background: url("../images/down_erweima.jpg") no-repeat;
+   position: absolute;
+    top:37px;
+    left:25px;
+}
+.down .down_btn{
+    width: 149px;
+    height: 153px;
+    background: url("../images/down_btn.png") no-repeat;
+    position: absolute;
+    top:37px;
+    left:207px;
+}
+.down .down_btn a{
+    display: block;
+    width: 149px;
+    height: 48px;
+}
+.down .down_btn .down_btn2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.btn{
+    position: absolute;
+    top:37px;
+    right: 25px;
+}
+.btn a{
+    display: block;
+    width:103px;
+    height: 153px;
+    background: url("../images/go_cover.jpg") no-repeat;
+}
+.btn a:hover{
+    background: url("../images/go_cover.jpg") no-repeat -103px 0;
+}
+
+/*第一个背景结束*/
+
+/*第二个背景开始*/
+.bg2{
+    height: 865px;
+      background: url("../images/bg2.jpg") no-repeat center top;
+    position: relative;
+}
+.new_section{
+    width: 100%;
+    height: 865px;
+    position: relative;
+}
+.new_section .new_btn{
+       width: 100%;
+}
+ .new_section img{
+     padding-top: 80px;
+     position: absolute;
+     left:42%;
+     margin-left:-6px;
+ }
+.new_btn{
+    position:absolute;
+    width: 100%;
+    height: 865px;
+}
+.new_btn span{
+    width: 53px;
+    height: 103px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 111;
+ }
+.new_btn .btnLast{
+    background: url("../images/slider_btn.png") no-repeat ;
+top:45%;
+left: 250px;
+}
+.new_section .btnNext{
+    background: url("../images/slider_btn.png") no-repeat -1122px 0;
+    top:45%;
+    right: 250px;
+}
+.new_section .new_btn ul{
+    width: 700%;
+}
+.new_section .new_btn li{
+    float: left;
+    height: 865px;
+}
+.new_section .li1{
+    background: url("../images/new_zs.png") no-repeat center top;
+}
+.new_section .li2{
+    background: url("../images/new_sz.png") no-repeat center top;
+}
+.new_section .li3{
+    background: url("../images/new_zj.png") no-repeat center top;
+}
+.new_section .li4{
+    background: url("../images/new_zy.png") no-repeat center top;
+}
+.new_section .li5{
+    background: url("../images/new_cj.png") no-repeat center top;
+}
+.new_section .li6{
+    background: url("../images/new_cw.png") no-repeat center top;
+}
+.new_section .li7{
+    background: url("../images/new_jh.png") no-repeat center top;
+}
+
+.new_section .tab{
+    position:absolute;
+    width: 1000px;
+    left:50%;
+    margin-left: -500px;
+    bottom: 86px;
+    z-index: 111;
+}
+
+.new_section .tab li {
+    float: left;
+    height: 22px;
+    width: 22px;
+    background: url("../images/new_btn.png") no-repeat -51px 0;
+    margin: 0 15px;
+    cursor: pointer;
+}
+.new_section .tab li:first-child{
+     margin-left: 318px;
+}
+
+.new_section .tab .con {
+    background: url("../images/new_btn.png") no-repeat;
+}
+
+/*第二个背景结束*/
+
+/*第三个背景开始*/
+.bg3 {
+    position: relative;
+    height: 1457px;
+    background: url("../images/bg3.jpg") no-repeat center top;
+}
+
+.bg3 .six_job {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.bg3 .job_box {
+    width: 1350px;
+    height: 767px;
+    position: relative;
+    top:-46px;
+}
+.bg3 .job_box span {
+    width: 53px;
+    height: 103px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 111;
+    top:336px;
+}
+.bg3 .job_box .job_btnLeft {
+    background: url("../images/slider_btn.png") no-repeat;
+    left: 50%;
+    margin-left: -584px;
+}
+
+.bg3 .job_box .job_btnRight {
+    background: url("../images/slider_btn.png") no-repeat -1122px 0;
+    right: 50%;
+    margin-right: -584px;
+
+}
+.job_box .job_ul{
+   width: 700%;
+    position: absolute;
+    left:0;
+}
+
+.job_box .job_ul li{
+    float: left;
+    width: 1350px;
+    height: 661px;
+    text-align: center;
+    position: relative;
+}
+
+ .job_ul li img{
+    position:relative;
+
+}
+.job_ul li a{
+    position: absolute;
+    width: 123px;
+    height: 214px;
+    background: url("../images/job_more.png") no-repeat;
+    top: 408px;
+    left: 50%;
+    margin-left: -123px;
+}
+.tab_box{
+    width: 997px;
+    height: 62px;
+    border-bottom: 1px solid #899dbe;
+    margin: 0 auto;
+    margin-top: -107px;
+    position: relative;
+    z-index: 111;
+
+}
+.tab_box ul>li{
+  width: 122px;
+    height: 122px;
+    float: left;
+    margin-right: 53px;
+    font-size: 20px;
+    line-height: 120px;
+    text-align: center;
+    color: #fff;
+    background: url("../images/occupation_btn.png") no-repeat -122px 0;
+    cursor: pointer;
+
+}
+.tab_box .on{
+    background: url("../images/occupation_btn.png") no-repeat;
+}
+.tab_box ul>li:last-child{
+    margin-right: 0;
+
+}
+
+.back_cover{
+    position: absolute;
+    left: 50%;
+    margin-left: -70px;
+    top: 1030px;
+}
+.back_cover a{
+    display: block;
+    width: 140px;
+    height: 44px;
+}
+
+/*第三个背景结束*/
+
+/*底部开始*/
+.footer{
+    width:100% ;
+    height: 115px;
+    position: relative;
+}
+.footer .bottomlogo{
+    position: absolute;
+    top:26px;
+    width: 220px;
+    height: 37px;
+    background: url("../images/wmlogo.png") no-repeat center center ;
+    padding-left: 45px;
+    padding-top: 10px;
+    border-right: 1px solid #c5c5c5;
+}
+
+.footer .beian{
+    position: absolute;
+    z-index: 102;
+    width: 67px;
+    height: 35px;
+    top: 26px;
+    border: 1px solid #3b3b3b;
+    padding-left: 45px;
+    padding-top: 10px;
+    font-size: 12px;
+    text-align: center;
+    left: 320px;
+    background: url("../images/bg.gif") no-repeat -78px -211px;
+    line-height: 14px;
+    color: #444;
+}
+ .footer .company_in{
+     position: absolute;
+     left: 467px;
+     top:12px;
+     color: #444;
+     line-height: 20px;
+ }
+.company_in ul li{
+    height: 20px;
+    float: left;
+    margin-right: 24px;
+}
+.company_in a{
+    color: #444;
+}
+.company_in a:hover{
+    color: #cc0000;
+}
+
+/*底部结束*/
